@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contenido="width=device-width, initial-scale=1.0">
+    <title>Hospital para Animales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hospital para Animales</h1>
+        <h1>"Compasión Peluda"</h1>
+    </header>
+    <main>
+        <section id="info">
+            <img src="img/hospitalito.jfif" class="cosito">
+            <h2 id="info-subtitulo">Acerca de nosotros</h2>
+            <div class="info-descripcion">
+                <p>Ofrecemos atención médica de calidad a todos tus animales de compañía. Nuestro equipo está compuesto por expertos veterinarios que brindan atención integral y amable a tus mascotas.</p>
+            </div>
+            
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Consultas generales</li>
+                <li>Vacunación</li>
+                <li>Esterilización</li>
+                <li>Exámenes de laboratorio</li>
+                <li>Internación</li>
+            </ul>
+        </section>
+        <section id="Turno">
+            <h2>Generar turno</h2>
+            <form id="Turno-form">
+                <label for="name">Nombre del animal:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <br>
+                <label for="species">Especie:</label>
+                <input type="text" id="species" name="species" required>
+                <br>
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" required>
+                <br>
+                <label for="problem">Problema:</label>
+                <textarea id="problem" name="problem" required></textarea>
+                <br>
+                <button type="submit" id="GenerarTurno">Solicitar turno</button>
+            </form>
+        </section>
+    </main>
+    
+    <div class="advertencia" id="advertencia">
+        <div class="advertencia-contenido">
+            <span class="cerrar" id="cerrar-advertencia">&times;</span>
+            <img src="img/gatitofeliz.jpg" class="advertencia-image">
+            <p id="advertencia-message"></p>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
